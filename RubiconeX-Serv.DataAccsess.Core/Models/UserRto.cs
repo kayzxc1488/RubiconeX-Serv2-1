@@ -9,9 +9,9 @@ namespace RubiconeX_Serv.DataAccsess.Core.Models
     [Table("User")]
     public class UserRto
     {
-        [Key] public int Id { get; set; }
+        [Key] public int UserId { get; set; }
         public bool IsBoy { get; set; }
-       [Required]  public int PhoneNumberPreFix { get; set; }
+       [Required]  public int PhoneNumberPrefix { get; set; }
         [Required] public int PhoneNumber { get; set; }
         [Required, MinLength(7)] public string Password { get; set; }
         public string FirstName { get; set; }

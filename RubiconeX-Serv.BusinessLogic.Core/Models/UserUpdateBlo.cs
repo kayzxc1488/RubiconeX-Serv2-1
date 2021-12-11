@@ -14,5 +14,6 @@ namespace RubiconeX_Serv.BusinessLogic.Core.Models
         public string Introdution { get; set; }
         public bool IsBoy { get; set; }
         public DateTimeOffset Birthday { get; set; }
+        public string Password { get; set; }
     }
 }

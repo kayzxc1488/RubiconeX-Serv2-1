@@ -283,6 +283,16 @@
         "runtime": {
           "bin/placeholder/RubiconeX-Serv.DataAccsess.Core.dll": {}
         }
+      },
+      "RubiconeX-Serv.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/RubiconeX-Serv.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RubiconeX-Serv.Shared.dll": {}
+        }
       }
     }
   },
@@ -852,6 +862,11 @@
       "type": "project",
       "path": "../RubiconeX-Serv.DataAccsess.Core/RubiconeX-Serv.DataAccsess.Core.csproj",
       "msbuildProject": "../RubiconeX-Serv.DataAccsess.Core/RubiconeX-Serv.DataAccsess.Core.csproj"
+    },
+    "RubiconeX-Serv.Shared/1.0.0": {
+      "type": "project",
+      "path": "../RubiconeX-Serv.Shared/RubiconeX-Serv.Shared.csproj",
+      "msbuildProject": "../RubiconeX-Serv.Shared/RubiconeX-Serv.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -859,7 +874,8 @@
       "AutoMapper >= 10.1.1",
       "RubiconeX-Serv.BusinessLogic.Core >= 1.0.0",
       "RubiconeX-Serv.DataAccsess >= 1.0.0",
-      "RubiconeX-Serv.DataAccsess.Core >= 1.0.0"
+      "RubiconeX-Serv.DataAccsess.Core >= 1.0.0",
+      "RubiconeX-Serv.Shared >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -901,6 +917,9 @@
             },
             "C:\\Users\\StudentDev\\Documents\\solovev\\RubiconeX-Serv2\\RubiconeX-Serv.DataAccsess\\RubiconeX-Serv.DataAccsess.csproj": {
               "projectPath": "C:\\Users\\StudentDev\\Documents\\solovev\\RubiconeX-Serv2\\RubiconeX-Serv.DataAccsess\\RubiconeX-Serv.DataAccsess.csproj"
+            },
+            "C:\\Users\\StudentDev\\Documents\\solovev\\RubiconeX-Serv2\\RubiconeX-Serv.Shared\\RubiconeX-Serv.Shared.csproj": {
+              "projectPath": "C:\\Users\\StudentDev\\Documents\\solovev\\RubiconeX-Serv2\\RubiconeX-Serv.Shared\\RubiconeX-Serv.Shared.csproj"
             }
           }
         }

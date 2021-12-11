@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using RubiconeX_Serv.BusinessLogic.Core.Interfaces;
 using RubiconeX_Serv.BusinessLogic.Core.Models;
 using RubiconeX_Serv.DataAccsess.Core.Interfaces.Context;
@@ -7,6 +8,8 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using System.Linq;
+using RubiconeX_Serv.Shared.Exception;
 
 namespace RubiconeX_Serv.BusinessLogic.Services
 {
@@ -21,9 +24,15 @@ namespace RubiconeX_Serv.BusinessLogic.Services
             _context = context;
         }
 
-        public Task<UserInformationBlo> Auth(int phoneNumberPreFix, int phoneNumber, string password)
+        public async Task<UserInformationBlo> Auth(int PhoneNumberPrefix, int PhoneNumber, string password)
         {
-            throw new NotImplementedException();
+          UserRto user = await _context.Users.FirstOrDefaultAsync(x => x.PhoneNumberPrefix == PhoneNumberPrefix && x.PhoneNumber == PhoneNumber && x.Password == password);
+
+
+            if (user == null)
+                throw new NotFoundExeption("Неверный номер телефона, или пароль");
+
+            return await ConvertToUserInformationBlo(user);
         }
 
         public Task<bool> DoesExist(int phoneNumberPreFix, int phoneNumber)
@@ -31,19 +40,44 @@ namespace RubiconeX_Serv.BusinessLogic.Services
             throw new NotImplementedException();
         }
 
-        public Task<UserInformationBlo> Get(int UserId)
+        public async Task<UserInformationBlo> Get(int UserId)
         {
-            throw new NotImplementedException();
+            UserRto user = await _context.Users.FirstOrDefaultAsync(y => y.UserId == UserId);
+            if (user == null)
+                throw new NotFoundExeption("Неверный айди пользователя");
+            return await ConvertToUserInformationBlo(user);
         }
 
-        public Task<UserInformationBlo> Registration(int phoneNumberPreFix, int phoneNumber, string password)
+        public async Task<UserInformationBlo> Registration(int phoneNumberPrefix, int phoneNumber, string password)
         {
-            throw new NotImplementedException();
+            UserRto newUser = new UserRto()
+            { PhoneNumberPrefix = phoneNumberPrefix, PhoneNumber = phoneNumber, Password = password, };
+
+            _context.Users.Add(newUser);
+
+            await _context.SaveChangesAsync();
+
+            return await ConvertToUserInformationBlo(newUser);
         }
 
-        public Task<UserInformationBlo> Update(int phoneNumberPreFix, int phoneNumber, string password, UserUpdateBlo userUpdateBlo)
+        public async Task<UserInformationBlo> Update(int phoneNumberPrefix, int phoneNumber, string password, UserUpdateBlo userUpdateBlo)
         {
-            throw new NotImplementedException();
+            UserRto user = await _context.Users.FirstOrDefaultAsync(x => x.PhoneNumberPrefix == phoneNumberPrefix && x.PhoneNumber == phoneNumber && x.Password == password);
+
+            if (user == null)
+                throw new NotFoundExeption("Неверный номер телефона, или пароль");
+
+            if (userUpdateBlo.IsBoy != null) user.IsBoy = userUpdateBlo.IsBoy;
+            if (userUpdateBlo.Password != null) user.Password = userUpdateBlo.Password;
+            if (userUpdateBlo.FirstName != null) user.FirstName = userUpdateBlo.FirstName;
+            if (userUpdateBlo.LastName != null) user.LastName = userUpdateBlo.LastName;
+            if (userUpdateBlo.Patronumic != null) user.Patronumic = userUpdateBlo.Patronumic;
+            if (userUpdateBlo.AvatarUrl != null) user.AvatarUrl = userUpdateBlo.AvatarUrl;
+            if (userUpdateBlo.Birthday != null) user.Birthday = userUpdateBlo.Birthday;
+
+            await _context.SaveChangesAsync();
+
+            return await ConvertToUserInformationBlo(user);
         }
 
         private async Task<UserInformationBlo> ConvertToUserInformationBlo(UserRto userRto)
