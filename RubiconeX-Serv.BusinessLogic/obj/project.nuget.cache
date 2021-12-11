@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/6j+jFbpLzun1i3jNlwtPaXTK4Q6MbV4bSz/tYLWhYCY7VkK7xfnINPUq4dLW01fCJwHUkjGAiIH3BC6V5fKnA==",
+  "dgSpecHash": "m4Zp1nd+3X3H+l8wNmyh9D4M+hHnfBaGqDHcTUm2W10k00EJmnCsqA21+onP7RiNR7Ef7rsYR7TP2gZ6Bms0jw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\StudentDev\\Documents\\GitHub\\RubiconeX-Serv\\RubiconeX-Serv.BusinessLogic\\RubiconeX-Serv.BusinessLogic.csproj",
+  "projectFilePath": "C:\\Users\\StudentDev\\Documents\\solovev\\RubiconeX-Serv2\\RubiconeX-Serv.BusinessLogic\\RubiconeX-Serv.BusinessLogic.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\StudentDev\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\StudentDev\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",

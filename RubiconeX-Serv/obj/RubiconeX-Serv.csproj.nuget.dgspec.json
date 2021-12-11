@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\StudentDev\\Documents\\GitHub\\RubiconeX-Serv\\RubiconeX-Serv\\RubiconeX-Serv.csproj": {}
+    "C:\\Users\\StudentDev\\Documents\\solovev\\RubiconeX-Serv2\\RubiconeX-Serv\\RubiconeX-Serv.csproj": {}
   },
   "projects": {
-    "C:\\Users\\StudentDev\\Documents\\GitHub\\RubiconeX-Serv\\RubiconeX-Serv\\RubiconeX-Serv.csproj": {
+    "C:\\Users\\StudentDev\\Documents\\solovev\\RubiconeX-Serv2\\RubiconeX-Serv\\RubiconeX-Serv.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\StudentDev\\Documents\\GitHub\\RubiconeX-Serv\\RubiconeX-Serv\\RubiconeX-Serv.csproj",
+        "projectUniqueName": "C:\\Users\\StudentDev\\Documents\\solovev\\RubiconeX-Serv2\\RubiconeX-Serv\\RubiconeX-Serv.csproj",
         "projectName": "RubiconeX-Serv",
-        "projectPath": "C:\\Users\\StudentDev\\Documents\\GitHub\\RubiconeX-Serv\\RubiconeX-Serv\\RubiconeX-Serv.csproj",
+        "projectPath": "C:\\Users\\StudentDev\\Documents\\solovev\\RubiconeX-Serv2\\RubiconeX-Serv\\RubiconeX-Serv.csproj",
         "packagesPath": "C:\\Users\\StudentDev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\StudentDev\\Documents\\GitHub\\RubiconeX-Serv\\RubiconeX-Serv\\obj\\",
+        "outputPath": "C:\\Users\\StudentDev\\Documents\\solovev\\RubiconeX-Serv2\\RubiconeX-Serv\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

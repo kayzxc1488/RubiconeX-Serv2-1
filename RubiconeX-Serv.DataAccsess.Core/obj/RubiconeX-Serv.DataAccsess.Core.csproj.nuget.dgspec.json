@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\StudentDev\\Documents\\GitHub\\RubiconeX-Serv\\RubiconeX-Serv.DataAccsess.Core\\RubiconeX-Serv.DataAccsess.Core.csproj": {}
+    "C:\\Users\\StudentDev\\Documents\\solovev\\RubiconeX-Serv2\\RubiconeX-Serv.DataAccsess.Core\\RubiconeX-Serv.DataAccsess.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\StudentDev\\Documents\\GitHub\\RubiconeX-Serv\\RubiconeX-Serv.DataAccsess.Core\\RubiconeX-Serv.DataAccsess.Core.csproj": {
+    "C:\\Users\\StudentDev\\Documents\\solovev\\RubiconeX-Serv2\\RubiconeX-Serv.DataAccsess.Core\\RubiconeX-Serv.DataAccsess.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\StudentDev\\Documents\\GitHub\\RubiconeX-Serv\\RubiconeX-Serv.DataAccsess.Core\\RubiconeX-Serv.DataAccsess.Core.csproj",
+        "projectUniqueName": "C:\\Users\\StudentDev\\Documents\\solovev\\RubiconeX-Serv2\\RubiconeX-Serv.DataAccsess.Core\\RubiconeX-Serv.DataAccsess.Core.csproj",
         "projectName": "RubiconeX-Serv.DataAccsess.Core",
-        "projectPath": "C:\\Users\\StudentDev\\Documents\\GitHub\\RubiconeX-Serv\\RubiconeX-Serv.DataAccsess.Core\\RubiconeX-Serv.DataAccsess.Core.csproj",
+        "projectPath": "C:\\Users\\StudentDev\\Documents\\solovev\\RubiconeX-Serv2\\RubiconeX-Serv.DataAccsess.Core\\RubiconeX-Serv.DataAccsess.Core.csproj",
         "packagesPath": "C:\\Users\\StudentDev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\StudentDev\\Documents\\GitHub\\RubiconeX-Serv\\RubiconeX-Serv.DataAccsess.Core\\obj\\",
+        "outputPath": "C:\\Users\\StudentDev\\Documents\\solovev\\RubiconeX-Serv2\\RubiconeX-Serv.DataAccsess.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

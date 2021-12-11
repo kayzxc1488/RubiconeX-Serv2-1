@@ -663,11 +663,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\StudentDev\\Documents\\GitHub\\RubiconeX-Serv\\RubiconeX-Serv.DataAccsess\\RubiconeX-Serv.DataAccsess.csproj",
+      "projectUniqueName": "C:\\Users\\StudentDev\\Documents\\solovev\\RubiconeX-Serv2\\RubiconeX-Serv.DataAccsess\\RubiconeX-Serv.DataAccsess.csproj",
       "projectName": "RubiconeX-Serv.DataAccsess",
-      "projectPath": "C:\\Users\\StudentDev\\Documents\\GitHub\\RubiconeX-Serv\\RubiconeX-Serv.DataAccsess\\RubiconeX-Serv.DataAccsess.csproj",
+      "projectPath": "C:\\Users\\StudentDev\\Documents\\solovev\\RubiconeX-Serv2\\RubiconeX-Serv.DataAccsess\\RubiconeX-Serv.DataAccsess.csproj",
       "packagesPath": "C:\\Users\\StudentDev\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\StudentDev\\Documents\\GitHub\\RubiconeX-Serv\\RubiconeX-Serv.DataAccsess\\obj\\",
+      "outputPath": "C:\\Users\\StudentDev\\Documents\\solovev\\RubiconeX-Serv2\\RubiconeX-Serv.DataAccsess\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -687,8 +687,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\StudentDev\\Documents\\GitHub\\RubiconeX-Serv\\RubiconeX-Serv.DataAccsess.Core\\RubiconeX-Serv.DataAccsess.Core.csproj": {
-              "projectPath": "C:\\Users\\StudentDev\\Documents\\GitHub\\RubiconeX-Serv\\RubiconeX-Serv.DataAccsess.Core\\RubiconeX-Serv.DataAccsess.Core.csproj"
+            "C:\\Users\\StudentDev\\Documents\\solovev\\RubiconeX-Serv2\\RubiconeX-Serv.DataAccsess.Core\\RubiconeX-Serv.DataAccsess.Core.csproj": {
+              "projectPath": "C:\\Users\\StudentDev\\Documents\\solovev\\RubiconeX-Serv2\\RubiconeX-Serv.DataAccsess.Core\\RubiconeX-Serv.DataAccsess.Core.csproj"
             }
           }
         }

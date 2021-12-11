@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "N1J6i4NnYK6lzlMys0y+SXl78Oo9yq2v7FXFVHTKtNSsGt4ndF36+Vf28cmf3PSvG6KEdvv9q/uMOv8Ium/uAQ==",
+  "dgSpecHash": "bpuIjFA73XYPgg58I+4OgCLYvgsBC9m2ROhcu1yDYqIC3C22XRGWDk4veLtMQPDUezLMsGgGgbVqGHTolfo0QA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\StudentDev\\Documents\\GitHub\\RubiconeX-Serv\\RubiconeX-Serv.DataAccsess\\RubiconeX-Serv.DataAccsess.csproj",
+  "projectFilePath": "C:\\Users\\StudentDev\\Documents\\solovev\\RubiconeX-Serv2\\RubiconeX-Serv.DataAccsess\\RubiconeX-Serv.DataAccsess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\StudentDev\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\StudentDev\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",

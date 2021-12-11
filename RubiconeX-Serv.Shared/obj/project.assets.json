@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\StudentDev\\Documents\\GitHub\\RubiconeX-Serv\\RubiconeX-Serv.Shared\\RubiconeX-Serv.Shared.csproj",
+      "projectUniqueName": "C:\\Users\\StudentDev\\Documents\\solovev\\RubiconeX-Serv2\\RubiconeX-Serv.Shared\\RubiconeX-Serv.Shared.csproj",
       "projectName": "RubiconeX-Serv.Shared",
-      "projectPath": "C:\\Users\\StudentDev\\Documents\\GitHub\\RubiconeX-Serv\\RubiconeX-Serv.Shared\\RubiconeX-Serv.Shared.csproj",
+      "projectPath": "C:\\Users\\StudentDev\\Documents\\solovev\\RubiconeX-Serv2\\RubiconeX-Serv.Shared\\RubiconeX-Serv.Shared.csproj",
       "packagesPath": "C:\\Users\\StudentDev\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\StudentDev\\Documents\\GitHub\\RubiconeX-Serv\\RubiconeX-Serv.Shared\\obj\\",
+      "outputPath": "C:\\Users\\StudentDev\\Documents\\solovev\\RubiconeX-Serv2\\RubiconeX-Serv.Shared\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

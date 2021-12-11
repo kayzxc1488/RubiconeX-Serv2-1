@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\StudentDev\\Documents\\GitHub\\RubiconeX-Serv\\RubiconeX-Serv.BusinessLogic.Core\\RubiconeX-Serv.BusinessLogic.Core.csproj": {}
+    "C:\\Users\\StudentDev\\Documents\\solovev\\RubiconeX-Serv2\\RubiconeX-Serv.BusinessLogic.Core\\RubiconeX-Serv.BusinessLogic.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\StudentDev\\Documents\\GitHub\\RubiconeX-Serv\\RubiconeX-Serv.BusinessLogic.Core\\RubiconeX-Serv.BusinessLogic.Core.csproj": {
+    "C:\\Users\\StudentDev\\Documents\\solovev\\RubiconeX-Serv2\\RubiconeX-Serv.BusinessLogic.Core\\RubiconeX-Serv.BusinessLogic.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\StudentDev\\Documents\\GitHub\\RubiconeX-Serv\\RubiconeX-Serv.BusinessLogic.Core\\RubiconeX-Serv.BusinessLogic.Core.csproj",
+        "projectUniqueName": "C:\\Users\\StudentDev\\Documents\\solovev\\RubiconeX-Serv2\\RubiconeX-Serv.BusinessLogic.Core\\RubiconeX-Serv.BusinessLogic.Core.csproj",
         "projectName": "RubiconeX-Serv.BusinessLogic.Core",
-        "projectPath": "C:\\Users\\StudentDev\\Documents\\GitHub\\RubiconeX-Serv\\RubiconeX-Serv.BusinessLogic.Core\\RubiconeX-Serv.BusinessLogic.Core.csproj",
+        "projectPath": "C:\\Users\\StudentDev\\Documents\\solovev\\RubiconeX-Serv2\\RubiconeX-Serv.BusinessLogic.Core\\RubiconeX-Serv.BusinessLogic.Core.csproj",
         "packagesPath": "C:\\Users\\StudentDev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\StudentDev\\Documents\\GitHub\\RubiconeX-Serv\\RubiconeX-Serv.BusinessLogic.Core\\obj\\",
+        "outputPath": "C:\\Users\\StudentDev\\Documents\\solovev\\RubiconeX-Serv2\\RubiconeX-Serv.BusinessLogic.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

@@ -869,11 +869,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\StudentDev\\Documents\\GitHub\\RubiconeX-Serv\\RubiconeX-Serv.BusinessLogic\\RubiconeX-Serv.BusinessLogic.csproj",
+      "projectUniqueName": "C:\\Users\\StudentDev\\Documents\\solovev\\RubiconeX-Serv2\\RubiconeX-Serv.BusinessLogic\\RubiconeX-Serv.BusinessLogic.csproj",
       "projectName": "RubiconeX-Serv.BusinessLogic",
-      "projectPath": "C:\\Users\\StudentDev\\Documents\\GitHub\\RubiconeX-Serv\\RubiconeX-Serv.BusinessLogic\\RubiconeX-Serv.BusinessLogic.csproj",
+      "projectPath": "C:\\Users\\StudentDev\\Documents\\solovev\\RubiconeX-Serv2\\RubiconeX-Serv.BusinessLogic\\RubiconeX-Serv.BusinessLogic.csproj",
       "packagesPath": "C:\\Users\\StudentDev\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\StudentDev\\Documents\\GitHub\\RubiconeX-Serv\\RubiconeX-Serv.BusinessLogic\\obj\\",
+      "outputPath": "C:\\Users\\StudentDev\\Documents\\solovev\\RubiconeX-Serv2\\RubiconeX-Serv.BusinessLogic\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -893,14 +893,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\StudentDev\\Documents\\GitHub\\RubiconeX-Serv\\RubiconeX-Serv.BusinessLogic.Core\\RubiconeX-Serv.BusinessLogic.Core.csproj": {
-              "projectPath": "C:\\Users\\StudentDev\\Documents\\GitHub\\RubiconeX-Serv\\RubiconeX-Serv.BusinessLogic.Core\\RubiconeX-Serv.BusinessLogic.Core.csproj"
+            "C:\\Users\\StudentDev\\Documents\\solovev\\RubiconeX-Serv2\\RubiconeX-Serv.BusinessLogic.Core\\RubiconeX-Serv.BusinessLogic.Core.csproj": {
+              "projectPath": "C:\\Users\\StudentDev\\Documents\\solovev\\RubiconeX-Serv2\\RubiconeX-Serv.BusinessLogic.Core\\RubiconeX-Serv.BusinessLogic.Core.csproj"
             },
-            "C:\\Users\\StudentDev\\Documents\\GitHub\\RubiconeX-Serv\\RubiconeX-Serv.DataAccsess.Core\\RubiconeX-Serv.DataAccsess.Core.csproj": {
-              "projectPath": "C:\\Users\\StudentDev\\Documents\\GitHub\\RubiconeX-Serv\\RubiconeX-Serv.DataAccsess.Core\\RubiconeX-Serv.DataAccsess.Core.csproj"
+            "C:\\Users\\StudentDev\\Documents\\solovev\\RubiconeX-Serv2\\RubiconeX-Serv.DataAccsess.Core\\RubiconeX-Serv.DataAccsess.Core.csproj": {
+              "projectPath": "C:\\Users\\StudentDev\\Documents\\solovev\\RubiconeX-Serv2\\RubiconeX-Serv.DataAccsess.Core\\RubiconeX-Serv.DataAccsess.Core.csproj"
             },
-            "C:\\Users\\StudentDev\\Documents\\GitHub\\RubiconeX-Serv\\RubiconeX-Serv.DataAccsess\\RubiconeX-Serv.DataAccsess.csproj": {
-              "projectPath": "C:\\Users\\StudentDev\\Documents\\GitHub\\RubiconeX-Serv\\RubiconeX-Serv.DataAccsess\\RubiconeX-Serv.DataAccsess.csproj"
+            "C:\\Users\\StudentDev\\Documents\\solovev\\RubiconeX-Serv2\\RubiconeX-Serv.DataAccsess\\RubiconeX-Serv.DataAccsess.csproj": {
+              "projectPath": "C:\\Users\\StudentDev\\Documents\\solovev\\RubiconeX-Serv2\\RubiconeX-Serv.DataAccsess\\RubiconeX-Serv.DataAccsess.csproj"
             }
           }
         }
