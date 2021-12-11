@@ -4,7 +4,7 @@ using RubiconeX_Serv.DataAccsess.Core.Models;
 
 namespace RubiconeX_Serv.BusinessLogic.AutoMapperProfile
 {
-    public class BusinessLogicProfile: Profile
+    public class BusinessLogicProfile : Profile
     {
         public BusinessLogicProfile()
         {
@@ -27,4 +27,5 @@ namespace RubiconeX_Serv.BusinessLogic.AutoMapperProfile
 
 
         }
+    }
 }
