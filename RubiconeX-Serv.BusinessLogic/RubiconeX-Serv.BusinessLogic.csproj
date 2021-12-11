@@ -13,6 +13,7 @@
     <ProjectReference Include="..\RubiconeX-Serv.BusinessLogic.Core\RubiconeX-Serv.BusinessLogic.Core.csproj" />
     <ProjectReference Include="..\RubiconeX-Serv.DataAccsess.Core\RubiconeX-Serv.DataAccsess.Core.csproj" />
     <ProjectReference Include="..\RubiconeX-Serv.DataAccsess\RubiconeX-Serv.DataAccsess.csproj" />
+    <ProjectReference Include="..\RubiconeX-Serv.Shared\RubiconeX-Serv.Shared.csproj" />
   </ItemGroup>
 
 </Project>

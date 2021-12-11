@@ -23,10 +23,16 @@ namespace RubiconeX_Serv.BusinessLogic.Services
             _mapper = mapper;
             _context = context;
         }
-
-        public async Task<UserInformationBlo> Auth(int PhoneNumberPrefix, int PhoneNumber, string password)
+        /// <summary>
+        /// Авторизация пользователя в системе
+        /// </summary>
+        /// <param name="PhoneNumberPrefix">Код страны телефона</param>
+        /// <param name="PhoneNumber">Сам телефон</param>
+        /// <param name="Password">Пароль</param>
+        /// <returns>Объект UserInformationBlo</returns>
+        public async Task<UserInformationBlo> Auth(int PhoneNumberPrefix, int PhoneNumber, string Password)
         {
-          UserRto user = await _context.Users.FirstOrDefaultAsync(x => x.PhoneNumberPrefix == PhoneNumberPrefix && x.PhoneNumber == PhoneNumber && x.Password == password);
+          UserRto user = await _context.Users.FirstOrDefaultAsync(x => x.PhoneNumberPrefix == PhoneNumberPrefix && x.PhoneNumber == PhoneNumber && x.Password == Password);
 
 
             if (user == null)
@@ -34,12 +40,22 @@ namespace RubiconeX_Serv.BusinessLogic.Services
 
             return await ConvertToUserInformationBlo(user);
         }
-
-        public Task<bool> DoesExist(int phoneNumberPreFix, int phoneNumber)
+        /// <summary>
+        /// Проверяет не занят ли номер телефона 
+        /// </summary>
+        /// <param name="PhoneNumberPrefix">Код страны</param>
+        /// <param name="PhoneNumber">Сам номер</param>
+        /// <returns>true- занят, false- не занят</returns>
+        public async Task<bool> DoesExist(int PhoneNumberPrefix, int PhoneNumber)
         {
-            throw new NotImplementedException();
+            return await _context.Users.AnyAsync(x => x.PhoneNumberPrefix == PhoneNumberPrefix && x.PhoneNumber == PhoneNumber);
+            
         }
-
+       /// <summary>
+       /// Возвращает информацию о пользователе
+       /// </summary>
+       /// <param name="UserId">Ид пользователя </param>
+       /// <returns></returns>
         public async Task<UserInformationBlo> Get(int UserId)
         {
             UserRto user = await _context.Users.FirstOrDefaultAsync(y => y.UserId == UserId);
@@ -47,11 +63,17 @@ namespace RubiconeX_Serv.BusinessLogic.Services
                 throw new NotFoundExeption("Неверный айди пользователя");
             return await ConvertToUserInformationBlo(user);
         }
-
-        public async Task<UserInformationBlo> Registration(int phoneNumberPrefix, int phoneNumber, string password)
+        /// <summary>
+        /// Создает нового пользователя в сети
+        /// </summary>
+        /// <param name="PhoneNumberPrefix">Код страны</param>
+        /// <param name="PhoneNumber">сам номер</param>
+        /// <param name="Password">пароль</param>
+        /// <returns>Объект UserInformationBlo</returns>
+        public async Task<UserInformationBlo> Registration(int PhoneNumberPrefix, int PhoneNumber, string Password)
         {
             UserRto newUser = new UserRto()
-            { PhoneNumberPrefix = phoneNumberPrefix, PhoneNumber = phoneNumber, Password = password, };
+            { PhoneNumberPrefix = PhoneNumberPrefix, PhoneNumber = PhoneNumber, Password = Password, };
 
             _context.Users.Add(newUser);
 
@@ -59,10 +81,17 @@ namespace RubiconeX_Serv.BusinessLogic.Services
 
             return await ConvertToUserInformationBlo(newUser);
         }
-
-        public async Task<UserInformationBlo> Update(int phoneNumberPrefix, int phoneNumber, string password, UserUpdateBlo userUpdateBlo)
+        /// <summary>
+        /// обновляет уже зарегистрованного пользователя 
+        /// </summary>
+        /// <param name="PhoneNumberPrefix">Код страны</param>
+        /// <param name="PhoneNumber">сам номер</param>
+        /// <param name="Password">пароль</param>
+        /// <param name="userUpdateBlo">Пакет новой инфы, которой надо заменить старую</param>
+        /// <returns>Объект UserInformationBlo</returns>
+        public async Task<UserInformationBlo> Update(int PhoneNumberPrefix, int PhoneNumber, string Password, UserUpdateBlo userUpdateBlo)
         {
-            UserRto user = await _context.Users.FirstOrDefaultAsync(x => x.PhoneNumberPrefix == phoneNumberPrefix && x.PhoneNumber == phoneNumber && x.Password == password);
+            UserRto user = await _context.Users.FirstOrDefaultAsync(x => x.PhoneNumberPrefix == PhoneNumberPrefix && x.PhoneNumber == PhoneNumber && x.Password == Password);
 
             if (user == null)
                 throw new NotFoundExeption("Неверный номер телефона, или пароль");
@@ -79,7 +108,11 @@ namespace RubiconeX_Serv.BusinessLogic.Services
 
             return await ConvertToUserInformationBlo(user);
         }
-
+        /// <summary>
+        /// Конвертирует из UserRto в User InformationBlo
+        /// </summary>
+        /// <param name="userRto"></param>
+        /// <returns>объект UserInformationBlo</returns>
         private async Task<UserInformationBlo> ConvertToUserInformationBlo(UserRto userRto)
         {
 
