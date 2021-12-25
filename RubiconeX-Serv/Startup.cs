@@ -6,10 +6,15 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using RubiconeX_Serv.AutomapperProfile;
+using RubiconeX_Serv.BusinessLogic.AutoMapperProfile;
+using RubiconeX_Serv.DataAccsess.Core.Interfaces.Context;
+using RubiconeX_Serv.DataAccsess.DbContext;
 
 namespace RubiconeX_Serv
 {
@@ -26,6 +31,9 @@ namespace RubiconeX_Serv
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddAutoMapper(typeof(BusinessLogicProfile), typeof(MicroserviceProfile));
+
+            services.AddDbContext<IRubiconeX_ServContext, RubiconeXContext>(o => o.UseSqlite("Data Source=userdata.db; Foreign Keys=True"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -34,9 +42,8 @@ namespace RubiconeX_Serv
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-            }
 
-            app.UseHttpsRedirection();
+            }
 
             app.UseRouting();
 
