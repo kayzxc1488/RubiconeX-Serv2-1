@@ -11,7 +11,6 @@ namespace RubiconeX_Serv.DataAccsess.Core.Interfaces.Context
     public interface IRubiconeX_ServContext: IDisposable, IAsyncDisposable
     {
         DbSet<UserRto> Users { get; set; }
-        DbSet<UserRoleRto> UserRoles { get; set; }
         Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
     }
 }

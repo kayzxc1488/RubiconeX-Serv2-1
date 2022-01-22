@@ -14,6 +14,5 @@ namespace RubiconeX_Serv.DataAccsess.DbContext
 
         }
         public DbSet<UserRto> Users { get; set; }
-        public DbSet<UserRoleRto> UserRoles { get; set; }
     }
 }
